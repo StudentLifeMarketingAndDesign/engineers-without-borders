@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#myTab a").click(function(e){e.preventDefault();$(this).tab("show")});$(window).load(function(){$(".flexslider").flexslider({animation:"slide",slideshow:!1,controlNav:!1,itemWidth:150,itemMargin:5})})});

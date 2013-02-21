@@ -1,0 +1,14 @@
+/* Import the common styles from typography like link colors. */
+@import 'typography.css';
+
+@import url('http://fonts.googleapis.com/css?family=PT+Serif');
+.typography{
+  color: #3a3a3a;
+  font-family: pt-serif, georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.lead{
+	
+}
