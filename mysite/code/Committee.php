@@ -17,8 +17,7 @@ class Committee extends Page {
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
-		$f->removeByName("Content");
-
+		$f->renameField("MainImage", "Main Image (253 x 265)");
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig->getComponentByType('GridFieldAddExistingAutocompleter')->setSearchFields(array('FirstName', 'LastName'))->setResultsFormat('$FirstName $LastName');
 				

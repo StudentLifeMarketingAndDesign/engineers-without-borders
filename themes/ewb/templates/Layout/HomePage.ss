@@ -23,26 +23,13 @@
             <div class="span10 offset1"
                 <br>
                 <div class="row-fluid">
+                <% loop ChildrenOf(committees) %>
                     <div class="span3 text-center">
-                        <h5><a href="#">Water</a></h5>
-                        <img src="http://placehold.it/175x175&amp;text=[img]" style="border-radius: 90px;" />
+                        <h5><a href="#">$Title</a></h5>
+                        <img src="{$MainImage.PaddedImage(175,175).URL}" style="border-radius: 90px;" />
                         <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
                     </div>
-                    <div class="span3 text-center">
-                        <h5><a href="#">Sanitation</a></h5>
-                        <img src="http://placehold.it/175x175&amp;text=[img]" style="border-radius: 90px;" />
-                        <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
-                    </div>
-                    <div class="span3 text-center">
-                        <h5><a href="#">Energy</a></h5>
-                        <img src="http://placehold.it/175x175&amp;text=[img]" style="border-radius: 90px;" />
-                        <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
-                    </div>
-                    <div class="span3 text-center">
-                        <h5><a href="#">Health</a></h5>
-                        <img src="http://placehold.it/175x175&amp;text=[img]" style="border-radius: 90px;" />
-                        <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
-                    </div>
+                 <% end_loop %>
                 </div>
                 <% include FieldNotes %>
                 

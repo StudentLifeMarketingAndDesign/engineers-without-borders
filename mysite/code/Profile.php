@@ -21,5 +21,9 @@ class Profile extends DataObject {
 	);
 
 	public static $plural_name = 'Profiles'; 
+	
+	public function BootstrapGrid($num) {
+		return round(12/$num);
+	}
 
 }

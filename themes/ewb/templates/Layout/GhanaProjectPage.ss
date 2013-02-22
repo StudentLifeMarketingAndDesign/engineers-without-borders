@@ -19,23 +19,13 @@
             <div class="span10 offset1" >
                 <h3 class="text-center">Project Committees</h3>
                 <div class="row-fluid">
+                                <% loop ChildrenOf(committees) %>
                     <div class="span3 text-center">
-                        <h5>Water</h5>
-                        <img src="http://placehold.it/202x202&amp;text=[img]" style="border-radius: 80px;">
+                        <h5><a href="#">$Title</a></h5>
+                        <img src="{$MainImage.PaddedImage(202,202).URL}" style="border-radius: 80px;" />
                     </div>
-                    <div class="span3 text-center">
-                        <h5>Sanitation</h5>
-                        <img src="http://placehold.it/202x202&amp;text=[img]" style="border-radius: 80px;" >
-                    </div>
-                    <div class="span3 text-center">
-                        <h5>Health</h5>
-                        <img src="http://placehold.it/202x202&amp;text=[img]" style="border-radius: 80px;">
-                    </div>
-                    <div class="span3 text-center">
-                        <h5>Energy</h5>
-                        <img src="http://placehold.it/202x202&amp;text=[img]" style="border-radius: 80px;">
-                    </div>
-                </div>
+                 <% end_loop %>
+                 </div>
             </div>
         </div>
         <div class="row-fluid">

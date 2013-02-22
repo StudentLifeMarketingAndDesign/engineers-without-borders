@@ -13,7 +13,7 @@ class Page extends SiteTree {
 		$fields = parent::getCMSFields();
 		
 		$fields->removeByName("Content");
-		$fields->addFieldToTab("Root.Main", new UploadField("MainImage", "Main Image (Dimensions Here)"));
+		$fields->addFieldToTab("Root.Main", new UploadField("MainImage", "Main Image (920 x 400)"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
 
 		
@@ -21,6 +21,12 @@ class Page extends SiteTree {
 		
 		
 	}
+	
+   
+   public function BootstrapGrid($num) {
+	   return round(12/$num);
+	   
+   }
 
 }
 class Page_Controller extends ContentController {
@@ -66,5 +72,6 @@ class Page_Controller extends ContentController {
          return false; 
       } 
    }
+
 
 }
