@@ -14,8 +14,7 @@
             <div class="span10 offset1">
             	$Content
             	$Form
+            </div>
+        </div>
                 
-                <% include FieldNotes %>
-                
-                
-                    </div><!-- end .container -->
+    </div><!-- end .container -->

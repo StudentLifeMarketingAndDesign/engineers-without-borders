@@ -10,7 +10,6 @@
         <div class="row-fluid">
             <div class="span10 offset1">
                 <h2 class="text-center">Overview</h2>
-                <img src="themes/ewb/images/hr.png">
                 	$Content
             </div>
          </div>
@@ -33,7 +32,6 @@
                 <br>
                 <br>
                 <h2 class="text-center">Community Info</h2>
-                <img src="{$ThemeDir}/images/hr.png">
                 $Content2
                 </div>
         </div>
@@ -46,11 +44,9 @@
             <div class="span10 offset1">
                 <br>
                 <h2 class="text-center">5 Weeks In Ghana</h2>
-                <img src="{$ThemeDir}/images/hr.png">
                 	$Content3
                 <br>
                 <h2 class="text-center">Photos</h2>
-                <img src="{$ThemeDir}/images/hr.png">
                 
                 <% loop GalleryImages %>
 	                <% if $First %>

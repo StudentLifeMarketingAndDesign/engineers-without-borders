@@ -13,13 +13,11 @@
                 <br>
                 <div class="clearfix">
                     <h2 class="text-center">$MainFeatureTitle</h2>
-                    <img src="{$ThemeDir}/images/hr.png">
                     <img src="{$MainFeatureImage.SetWidth(300).URL}" class="right" />
                     	$MainFeatureContent
                     </div>
                 <br>
                 <h2 class="text-center">Current Members $Now.Year</h2>
-                <img src="{$ThemeDir}/images/hr.png">
                 <br>
                 
                 <% loop Profiles %>    
@@ -44,6 +42,6 @@
                 <div class="row-fluid">
                 	$PastMembers
                 </div><!-- end .row -->
-
-                <% include FieldNotes %>
+            </div>
+        </div>
     </div><!-- end .container -->

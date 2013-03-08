@@ -26,9 +26,7 @@
                         <br>
                         <br>
                         <% if MainImage %>
-                        <img src="$MainImage.SetWidth(253).URL" class="left">
-                        <% else %>
-                        <img src="http://placehold.it/253x265&amp;text=[image]" class="left">                        
+                            <img src="$MainImage.SetWidth(253).URL" class="left">
                         <% end_if %>
                         $Content
                         <br>
@@ -49,7 +47,7 @@
                         <% end_if %>
                     </div>
                     <% end_loop %>
-                  </div>
-                <% include FieldNotes %>
-
+                </div>
+            </div>
+        </div>
     </div><!-- end .container -->

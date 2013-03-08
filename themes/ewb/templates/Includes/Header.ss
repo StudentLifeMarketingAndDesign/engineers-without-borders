@@ -3,8 +3,7 @@
 		<div class="container">
 			<ul class="clearfix">
 				<li><a href="support/">Donate/Support</a></li>
-				<li><a href="calendar/">Calendar</a></li>
-				<li><a href="#">Events</a></li>
+				<li><a href="calendar/">Calendar/Events</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 		</div>
@@ -17,7 +16,7 @@
 		<nav class="clearfix">
 			<ul class="main-nav clearfix">
 				<li><a href="about/">About Us</a></li>
-				<li><a href="ghana/">Ghana Project</a></li>
+				<li class="active"><a href="ghana/">Ghana Project</a></li>
 				<li><a href="committees/">Committees</a></li>
 				<li><a href="get-involved/">Get Involved</a></li>
 			</ul>

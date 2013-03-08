@@ -1,5 +1,7 @@
-        <br>
-        <div class="row-fluid"style="background: url(images/linedpaper.png);border-top: 1px solid #ccc;padding: 50px 0;">
+                <h2 class="events">Upcoming Events</h2>
+            </div>
+        </div>
+        <div class="row-fluid" style="background: url({$ThemeDir}/images/linedpaper.png);border-top: 1px solid #e5e5e5;padding: 50px 0;">
             <div class="span5 offset1">
                 <article>
                     <h3><a href="#">Blog Post Title</a></h3>
@@ -17,4 +19,12 @@
                 </article>
             </div>
         </div>
+        <h2>$DateHeader</h2>
+                <% if Events %>
+                    <div id="event-calendar-events">
+                      <% include EventList %>
+                    </div>
+                <% else %>
+                      <p><% _t('NOEVENTS','There are no events') %>.</p>
+                <% end_if %>
     </div><!-- end .container -->
