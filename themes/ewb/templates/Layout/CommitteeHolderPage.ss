@@ -48,6 +48,10 @@
                     </div>
                     <% end_loop %>
                 </div>
+                   <% include FieldNotes %>
             </div>
+            
         </div>
+        
     </div><!-- end .container -->
+

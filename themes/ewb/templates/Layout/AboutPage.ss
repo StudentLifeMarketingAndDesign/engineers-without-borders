@@ -42,6 +42,12 @@
                 <div class="row-fluid">
                 	$PastMembers
                 </div><!-- end .row -->
+                                <% include FieldNotes %>
+
+                
             </div>
         </div>
+
+
     </div><!-- end .container -->
+           

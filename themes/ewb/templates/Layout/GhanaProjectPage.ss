@@ -72,5 +72,7 @@
                 <% end_loop %>
                 
                 
-               <% include FieldNotes %>
     </div><!-- end .container --> 
+    
+               <% include FieldNotes %>
+

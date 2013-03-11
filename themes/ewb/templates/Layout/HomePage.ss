@@ -31,6 +31,7 @@
                     </div>
                  <% end_loop %>
                 </div>
+                
                 <% include FieldNotes %>
                 
              </div><!-- end .container -->

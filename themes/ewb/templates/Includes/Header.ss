@@ -4,7 +4,7 @@
 			<ul class="clearfix">
 				<li><a href="support/">Donate/Support</a></li>
 				<li><a href="calendar/">Calendar/Events</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="contact/">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -15,10 +15,13 @@
 		</a>
 		<nav class="clearfix">
 			<ul class="main-nav clearfix">
-				<li><a href="about/">About Us</a></li>
-				<li class="active"><a href="ghana/">Ghana Project</a></li>
-				<li><a href="committees/">Committees</a></li>
-				<li><a href="get-involved/">Get Involved</a></li>
+					<!--<li><a href="about/">About Us</a></li>
+					<li class="active"><a href="ghana/">Ghana Project</a></li>
+					<li><a href="committees/">Committees</a></li>
+					<li><a href="get-involved/">Get Involved</a></li>-->
+				<% control Menu(1) %>
+					<li <% if $LinkOrSection = "section" %>class="active"<% end_if %>><a href="$Link" >$MenuTitle</a></li>
+				<% end_control %>
 			</ul>
 		</nav>
     </div>

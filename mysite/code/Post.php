@@ -1,30 +1,45 @@
 <?php
-class Page extends SiteTree {
+class Post extends Page {
 
 	public static $db = array(
+	
+		"WrittenDate" => "Date",
+		"EventDate" => "Date",
+		"Author" => "Text",
+		"AuthorEmail" => "Text"
 	);
 
 	public static $has_one = array(
-		"MainImage" => "Image"
+		
 	);
+	
+	public static $can_be_root = false;
+	
 	
 	public function getCMSFields() {
 	
 		$fields = parent::getCMSFields();
 		
 		$fields->removeByName("Content");
-		$fields->addFieldToTab("Root.Main", new UploadField("MainImage", "Main Image (920 x 400)"));
+		
+		$fields->addFieldToTab("Root.Main", $eventDate = new DateField("EventDate", "Event Date (if applicable)"));
+		$eventDate->setConfig('showcalendar', true);
+
+		$fields->addFieldToTab("Root.Main", $writtenDate = new DateField("WrittenDate", "Published Date"));
+		$writtenDate->setConfig('showcalendar', true);
+				
+		$fields->addFieldToTab("Root.Main", new TextField("Author", "Author"));
+		$fields->addFieldToTab("Root.Main", new TextField("AuthorEmail", "Author's Email (optional)"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
 
 		
 		return $fields;
 		
 		
-	}
-
+	}	
 
 }
-class Page_Controller extends ContentController {
+class Post_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -46,38 +61,7 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
-	}
-	
-   public function BootstrapGrid($num) {
-	   return round(12/$num);
-	   
-   }	
-   
-   public function Posts($num = 2){
-	   $posts = Post::get()->limit($num);
-	   
-	   return $posts;
-	   
-   }
-	public function Profiles(){
-		$profiles = Profile::get();
-		
-		if($profiles){
-			return $profiles;
-		}else{
-			return false;
-		}
-		
-	}
-	
-	public function greaterThan($value, $reference) { 
-      if ($value > $reference){ 
-         return true; 
-      } 
-      else{ 
-         return false; 
-      } 
-   }
 
+	}
 
 }
