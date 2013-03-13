@@ -32,7 +32,7 @@
                         <br>
                         <div style="clear:both;"></div>
                         <% if Profiles %>
-                        <h4 style="clear:both;">Team Members</h4>
+                        <!--<h4 style="clear:both;">Team Members</h4>
                         <ul class="unstyled row-fluid">
                         
                         	<% loop Profiles %>
@@ -43,7 +43,7 @@
                                 <p>$FirstName $LastName</p>
                             </li>
                             <% end_loop %>
-                        </ul>
+                        </ul>-->
                         <% end_if %>
                     </div>
                     <% end_loop %>
