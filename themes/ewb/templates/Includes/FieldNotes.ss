@@ -9,7 +9,17 @@
                     	<article>
 
         					<h3><a href="calendar/#{$ID}">$Title</a></h3>
-        					<% if $Author %><h6>Written by <% if $AuthorEmail %><a href="mailto:$AuthorEmail">$Author</a><% else %>$Author<% end_if %> on <% end_if %>{$WrittenDate.Format("F n, Y")}</h6>        
+        					<% if $Author %>
+                                <h6>Written by 
+                                    <% if $AuthorEmail %>
+                                        <a href="mailto:$AuthorEmail">$Author</a>
+                                    <% else %>
+                                        $Author
+                                    <% end_if %>
+                                     on 
+
+                            <% end_if %>
+                            {$WrittenDate.Format("F n, Y")}</h6>        
         					<p>$Content.Summary(20)</p>
         					<p><a href="calendar/#{$ID}">Continue Reading</a>
         					
@@ -20,5 +30,3 @@
             <% end_if %>
         
         <% end_loop %>
-  
-    </div><!-- end .container -->
