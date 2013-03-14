@@ -9,22 +9,31 @@
         
         <iframe src="https://www.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America/Chicago" style="border: 0; padding: 30px;" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
         
-       <h2>Upcoming Events</h2>
-        <div class="row-fluid">
+       	<h2 class="events-title">Upcoming Events</h2>
+        <div class="events row-fluid">
 
             	$Content
             	$Form
 					<% loop $Children %>
 			        
 			        	<% if $Odd %>
-			        		<div class="row-fluid" style="background: url({$ThemeDir}/images/linedpaper.png);border-top: 1px solid #e5e5e5;padding: 50px 0;">
+			        		<div class="row-fluid">
 			        	<% end_if %>
 			        	<div class="span5 <% if $Odd %>offset1<% end_if %>" id="$ID">
 			        	
 							<article>
 								<h3>$Title</h3>								
-								<% if $Author %><h6>Written by <% if $AuthorEmail %><a href="mailto:$AuthorEmail">$Author</a><% else %>$Author<% end_if %> on <% end_if %>{$WrittenDate.Format("F n, Y")}</h6>        
-								<p>$Content.Summary(20)</p>
+								<% if $Author %>
+		                            <h6>Written by 
+		                                <% if $AuthorEmail %>
+		                                    <a href="mailto:$AuthorEmail">$Author</a>
+		                                <% else %>
+		                                    $Author
+		                                <% end_if %>
+		                            </h6>
+		                        <% end_if %>
+	                            <p>$EventDate.NiceUS</p>
+	        					<p>$Content.Summary</p>
 							</article>
 									        		
 			            </div>
@@ -34,8 +43,7 @@
 			        
 			        <% end_loop %><% --end loop Children --%>
 
-        </div>       
-        	<% include FieldNotes %>
+        </div>
     </div><!-- end .container -->
 
 
