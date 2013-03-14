@@ -60,19 +60,22 @@
 		                        </li>
 		                        
 		                <% if $Last || $MultipleOf(4) %>
-			                    </ul>
-			                </div>
+			                 </ul>
+                        </div>
 			             
-			                <br>
-			                <div class="row-fluid">
-		                    <ul class="unstyled">
+		                <br>
+		                <div class="row-fluid">
+                            <ul class="unstyled">
 		                   
 		                <% end_if %>
 		                
                 <% end_loop %>
-                
+            </div>
+        </div>
+        
+        <% include FieldNotes %>
                 
     </div><!-- end .container --> 
     
-               <% include FieldNotes %>
+               
 

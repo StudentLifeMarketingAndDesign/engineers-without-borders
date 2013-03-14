@@ -1,10 +1,12 @@
 <header class="header">
 	<div class="top-nav clearfix">
-		<ul class="clearfix">
-			<li><a href="support/">Donate/Support</a></li>
-			<li><a href="calendar/">Calendar/Events</a></li>
-			<li><a href="contact/">Contact Us</a></li>
-		</ul>
+		<div class="container">
+			<ul class="clearfix">
+				<li><a href="support/">Donate/Support</a></li>
+				<li><a href="calendar/">Calendar/Events</a></li>
+				<li><a href="contact/">Contact Us</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="container clearfix">
 		<a href="{$BaseHref}" class="logo">

@@ -23,15 +23,16 @@
             <div class="span10 offset1"
                 <br>
                 <div class="row-fluid">
-                <% loop ChildrenOf(committees) %>
-                    <div class="span3 text-center">
-                        <h5><a href="#">$Title</a></h5>
-                        <img src="{$MainImage.PaddedImage(175,175).URL}" style="border-radius: 90px;" />
-                        <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
-                    </div>
-                 <% end_loop %>
+                    <% loop ChildrenOf(committees) %>
+                        <div class="span3 text-center">
+                            <h5><a href="#">$Title</a></h5>
+                            <img src="{$MainImage.PaddedImage(175,175).URL}" style="border-radius: 90px;" />
+                            <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
+                        </div>
+                     <% end_loop %>
                 </div>
+            </div>
+        </div>
                 
-                <% include FieldNotes %>
-                
-             </div><!-- end .container -->
+        <% include FieldNotes %>
+    </div><!-- end .container -->
