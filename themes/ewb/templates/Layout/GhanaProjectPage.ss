@@ -19,7 +19,7 @@
                                 <% loop ChildrenOf(committees) %>
                     <div class="span3 text-center">
                         <h5><a href="#">$Title</a></h5>
-                        <img src="{$MainImage.PaddedImage(202,202).URL}" style="border-radius: 80px;" />
+                        <img src="{$MainImage.PaddedImage(202,202).URL}" alt="$Title" />
                     </div>
                  <% end_loop %>
                  </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="row-fluid">
             <div class="span12">
-                <img src="{$ThemeDir}/images/landscape.jpg">
+                <img src="{$ThemeDir}/images/landscape.jpg" alt="">
             </div>
         </div>
         <div class="row-fluid">
@@ -51,21 +51,23 @@
 	                
 		                <div class="row-fluid">
 		                    <ul class="unstyled">
-		                <% end_if %>
+                    <% end_if %>
 		                
 		                        <li class="span3">
-		                            <img src="$Image.SetWidth(222).URL">
+		                            <a href="$Image.URL">
+                                        <img src="$Image.SetWidth(222).URL" alt="">
+                                    </a>
 		                        </li>
 		                        
 		                <% if $Last || $MultipleOf(4) %>
 			                 </ul>
                         </div>
-			             
-		                <br>
+
+                        <br>
 		                <div class="row-fluid">
                             <ul class="unstyled">
 		                   
-		                <% end_if %>
+                    <% end_if %>
 		                
                 <% end_loop %>
             </div>
@@ -75,5 +77,11 @@
                 
     </div><!-- end .container --> 
     
-               
+    <% include Footer %>
+    
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="themes/ewb/javascript/vendor/jquery-1.8.0.min.js">\x3C/script>')</script>
+    <script src="{$ThemeDir}/javascript/plugins-ck.js"></script>
+    <script src="{$ThemeDir}/javascript/main-ck.js"></script>
 

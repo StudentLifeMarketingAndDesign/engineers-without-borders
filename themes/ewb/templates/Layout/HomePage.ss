@@ -1,4 +1,4 @@
- <div class="banner-container">
+    <div class="banner-container">
         <div class="banner banner-home"></div> 
     </div>
     
@@ -13,18 +13,18 @@
         <div class="row-fluid" style="background: #f4f4f4;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 30px 0;margin-top: 50px;margin-bottom: 80px;">
             <div class="span10 offset1">
                 <h3>$MainFeatureTitle</h3>
-                <img src="{$MainFeatureImage.SetWidth("300").URL}" class="right" />
+                <img src="{$MainFeatureImage.SetWidth("300").URL}" class="right" alt="$MainFeatureImage.Title" />
                 $MainFeatureContent
             </div>
         </div>
         <div class="row-fluid">
-            <div class="span10 offset1"
+            <div class="span10 offset1">
                 <br>
                 <div class="row-fluid">
                     <% loop ChildrenOf(committees) %>
                         <div class="span3 text-center">
                             <h5><a href="#">$Title</a></h5>
-                            <img src="{$MainImage.PaddedImage(175,175).URL}" style="border-radius: 90px;" />
+                            <img src="{$MainImage.PaddedImage(175,175).URL}" alt="$Title" />
                             <p class="text-small">Cras justo odio dapibus ac facilisis in egestas eget.</p>
                         </div>
                      <% end_loop %>
@@ -34,3 +34,5 @@
                 
         <% include FieldNotes %>
     </div><!-- end .container -->
+
+    <% include Footer %>

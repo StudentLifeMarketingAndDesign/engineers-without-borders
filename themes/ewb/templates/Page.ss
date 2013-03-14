@@ -23,16 +23,7 @@
     	<% include Header %>
     	
     	$Layout
-    
-    	<% include Footer %>
-    
-    
-    
-    <!-- _doc_end -->
-		<!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="themes/ewb/javascript/vendor/jquery-1.8.0.min.js">\x3C/script>')</script>
-        <script src="{$ThemeDir}/javascript/plugins-ck.js"></script>
-        <script src="{$ThemeDir}/javascript/main-ck.js"></script>
+
+        <% include Analytics %>
     </body>
 </html>

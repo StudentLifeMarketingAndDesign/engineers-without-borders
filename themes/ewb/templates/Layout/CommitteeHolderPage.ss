@@ -1,4 +1,4 @@
-<div class="banner-container">
+    <div class="banner-container">
         <div class="banner banner-home">
         </div>
     </div>
@@ -54,3 +54,4 @@
         
     </div><!-- end .container -->
 
+    <% include Footer %>

@@ -1,4 +1,4 @@
- <div class="banner-container">
+    <div class="banner-container">
         <div class="banner banner-home">
         </div>
     </div>
@@ -47,4 +47,6 @@
         <% include FieldNotes %>
         
     </div><!-- end .container -->
+
+    <% include Footer %>
            

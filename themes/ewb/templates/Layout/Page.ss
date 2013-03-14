@@ -19,3 +19,5 @@
         <% include FieldNotes %>
 
     </div><!-- end .container -->
+
+    <% include Footer %>
