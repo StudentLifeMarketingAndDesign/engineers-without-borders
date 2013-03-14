@@ -20,7 +20,7 @@
     <!-- templatename.php -->
     <body class="$URLSegment">
     
-    	<!-- header -->
+    	<% include DivisionBar %>
     	
     	<% include Header %>
     	
