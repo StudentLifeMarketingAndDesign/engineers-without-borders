@@ -1,13 +1,12 @@
 <div class="banner-container">
         <div class="banner banner-home">
-            <span></span>
         </div>
     </div>
 
     <div class="container main-content">
         <div class="title"><h1>Committees</h1></div>
         <% if MainImage %>
-        	<img src="$MainImage.SetWidth(920).URL" class="top-img" />
+        	<img src="$MainImage.SetWidth(920).URL" class="top-img" alt="" />
         <% end_if %>
         <br>
         <div class="row-fluid">

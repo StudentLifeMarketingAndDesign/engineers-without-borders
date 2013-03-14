@@ -1,7 +1,5 @@
  <div class="banner-container">
-        <div class="banner banner-home">
-            <span></span>
-        </div>
+        <div class="banner banner-home"></div>
     </div>
     
     <div class="container main-content">

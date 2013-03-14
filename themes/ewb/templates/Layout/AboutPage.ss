@@ -1,6 +1,5 @@
  <div class="banner-container">
         <div class="banner banner-home">
-            <span></span>
         </div>
     </div>
 

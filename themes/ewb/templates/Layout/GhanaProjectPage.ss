@@ -1,12 +1,10 @@
 <div class="banner-container">
-        <div class="banner banner-home">
-            <span></span>
-        </div>
+        <div class="banner banner-home"></div>
     </div>
     
     <div class="container main-content">
         <div class="title"><h1>$Title</h1></div>
-        <img src="{$MainImage.SetWidth(920).URL}" class="top-img" />
+        <img src="{$MainImage.SetWidth(920).URL}" class="top-img" alt="" />
         <div class="row-fluid">
             <div class="span10 offset1">
                 <h2 class="text-center">Overview</h2>
