@@ -16,9 +16,9 @@
                                     <% else %>
                                         $Author
                                     <% end_if %>
-                                     on {$WrittenDate.Format("F n, Y")}</h6>
+                                </h6>
                             <% end_if %>
-                                    
+                            <p>$EventDate.NiceUS</p>
         					<p>$Content.Summary</p>
                             <!-- <p>$Content.Summary(20)</p> -->
         					<p><a href="calendar/#{$ID}">Continue Reading</a>
