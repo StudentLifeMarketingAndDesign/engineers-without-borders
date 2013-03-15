@@ -17,28 +17,28 @@
                 <h3 class="text-center">Project Committees</h3>
                 <div class="row-fluid">
                     <div class="span3 committee-item">
-                        <a href="#">
+                        <a href="/committees">
                             <img src="{$ThemeDir}/images/committee_water.png" />
                             <h5>Water</h5>
                         </a>
                         
                     </div>
                     <div class="span3 committee-item">
-                        <a href="#">
+                        <a href="/committees">
                             <img src="{$ThemeDir}/images/committee_sanitation.png" />
                             <h5>Sanitation</h5>
                         </a>
                         
                     </div>
                     <div class="span3 committee-item">
-                        <a href="#">
+                        <a href="/committees">
                             <img src="{$ThemeDir}/images/committee_energy.png" />
                             <h5>Energy</h5>
                         </a>
                         
                     </div>
                     <div class="span3 committee-item">
-                        <a href="#">
+                        <a href="/committees">
                             <img src="{$ThemeDir}/images/committee_health.png" />
                            <h5>Health</h5> 
                         </a>

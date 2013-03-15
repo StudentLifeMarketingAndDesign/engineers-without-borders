@@ -53,7 +53,7 @@ table {font-family: arial, verdana, sans-serif;}
         width: 96%;
     }
 }
-@media only screen and (min-width: 920px) {
+
 	.banner-container {
 		position: relative;
 	}
@@ -73,7 +73,7 @@ table {font-family: arial, verdana, sans-serif;}
 	.main-content {
 		margin-top: 200px;
 	}
-}
+
 
 
 /* HEADER
@@ -173,7 +173,6 @@ table {font-family: arial, verdana, sans-serif;}
 ========================================================================== */
 .main-content {
 	background: #fff;
-	xpadding-bottom: 70px;
 	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
 	   -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
 	        box-shadow: 0 1px 5px rgba(0,0,0,0.3);
@@ -186,7 +185,7 @@ table {font-family: arial, verdana, sans-serif;}
 	left: 0;
 	top: -100px;
 	text-align: center;
-	width: 920px;
+	width: 100%;
 }
 .title h1 {
 	color: #fff;
@@ -194,6 +193,13 @@ table {font-family: arial, verdana, sans-serif;}
 	font-weight: 900;
 	margin: 0;
 	text-shadow: 0 0 10px rgba(0,0,0,.6);
+	
+    @media (max-width: 768px) {
+        font-size: 60px;
+    }
+    @media (max-width: 480px) {
+        font-size: 40px;
+    }
 }
 
 /* Members ---------------------- */
@@ -230,6 +236,16 @@ table {font-family: arial, verdana, sans-serif;}
 	height: 323px;
 }
 
+/* Committee Circles */
+.committee-item {
+	position: relative;
+	text-align: center;
+}
+.committee-item a {
+	display: block;
+}
+
+
 /* Side Nav ---------------------- */
 .side-nav { display: block; list-style: none; margin: 0; padding: 10px 0; }
 .side-nav li { display: block; list-style: none; margin: 0 0 7px 0; }
@@ -238,16 +254,10 @@ table {font-family: arial, verdana, sans-serif;}
 .side-nav li.divider { border-top: 1px solid #e6e6e6; height: 0; padding: 0; }
 
 
-.committee-item {
-	position: relative;
-	text-align: center;
-}
-.ghana .committee-item a {color: #fff;}
-
 /* EVENTS
 ========================================================================== */
 .events {
-	background: url(../images/linedpaper.jpg);
+	background: url(../images/linedpaper.png);
 	padding: 50px 0;
 }
 .events-title {

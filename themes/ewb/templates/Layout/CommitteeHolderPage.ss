@@ -23,7 +23,6 @@
                 <% loop Children %>
                     <div class="tab-pane <% if First %>active in <% end_if %>fade" id="{$URLSegment}">
                         <br>
-                        <br>
                         <% if MainImage %>
                             <img src="$MainImage.SetWidth(253).URL" class="left">
                         <% end_if %>
