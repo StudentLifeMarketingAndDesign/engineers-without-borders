@@ -11,6 +11,7 @@
         <% base_tag %>
 
         <link rel="stylesheet" href="{$ThemeDir}/css/master.css">
+        <link rel="stylesheet" href="{$ThemeDir}/css/print.css" media="print" />
         
         <script src="http://use.edgefonts.net/source-sans-pro:n3,n4,i4,n7,n9.js"></script>
     </head>
