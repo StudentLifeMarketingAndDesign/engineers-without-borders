@@ -238,6 +238,12 @@ table {font-family: arial, verdana, sans-serif;}
 .side-nav li.divider { border-top: 1px solid #e6e6e6; height: 0; padding: 0; }
 
 
+.committee-item {
+	position: relative;
+	text-align: center;
+}
+.ghana .committee-item a {color: #fff;}
+
 /* EVENTS
 ========================================================================== */
 .events {
