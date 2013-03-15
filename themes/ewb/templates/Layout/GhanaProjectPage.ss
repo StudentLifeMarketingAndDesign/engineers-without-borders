@@ -47,28 +47,32 @@
                 <h2 class="text-center">Photos</h2>
                 
                 <% loop GalleryImages %>
+                
+                	<%-- add a new row if we are on the first item --%>
 	                <% if $First %>
-	                
 		                <div class="row-fluid">
 		                    <ul class="unstyled">
                     <% end_if %>
 		                
-		                        <li class="span3">
+		                        <li class="span3 $Pos">
 		                            <a href="$Image.URL" class="fancybox" rel="group">
                                         <img src="$Image.SetWidth(222).URL" alt="">
                                     </a>
 		                        </li>
 		                        
+		                <%-- close the list and row if the we are on the fourth item in loop or the last --%>
 		                <% if $Last || $MultipleOf(4) %>
-			                 </ul>
-                        </div>
+				                 </ul>
+	                        </div>
+	                        <br>
+                        <% end_if %>
+                        
+                        <%-- start a new row if we are on the fourth item, but not the last one --%>
+                        <% if not $Last && $MultipleOf(4) %>
+                        	   <div class="row-fluid">
+		                    <ul class="unstyled">
+                        <% end_if %>
 
-                        <br>
-		                <div class="row-fluid">
-                            <ul class="unstyled">
-		                   
-                    <% end_if %>
-		                
                 <% end_loop %>
             </div>
         </div>
