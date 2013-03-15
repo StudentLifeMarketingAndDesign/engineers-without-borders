@@ -54,7 +54,7 @@
                     <% end_if %>
 		                
 		                        <li class="span3">
-		                            <a href="$Image.URL">
+		                            <a href="$Image.URL" class="fancybox" rel="group">
                                         <img src="$Image.SetWidth(222).URL" alt="">
                                     </a>
 		                        </li>

@@ -3,6 +3,9 @@ $(document).ready(function() {
   		e.preventDefault();
   		$(this).tab('show');
 	});
+
+	// FancyBox
+	$(".fancybox").fancybox();
 });
 
 
