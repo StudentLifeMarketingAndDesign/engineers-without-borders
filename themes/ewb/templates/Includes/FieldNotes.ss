@@ -8,7 +8,7 @@
                 	<div class="span5 <% if $Odd %>offset1<% end_if %>">
                     	<article>
 
-        					<h3><a href="calendar/#{$ID}">$Title</a></h3>
+        					<h4><a href="calendar/#{$ID}">$Title</a></h4>
         					<% if $Author %>
                                 <h6>Written by 
                                     <% if $AuthorEmail %>

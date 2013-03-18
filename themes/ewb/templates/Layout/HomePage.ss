@@ -7,7 +7,8 @@
         <div class="row-fluid">
             <div class="span10 offset1">
                 <br>
-                <p class="lead">$MissionStatement</p>
+                <p class="lead text-center">$MissionStatement</p>
+                <p class="text-center"><a href="#" target="_blank">&rarr; Download our newsletter</a></p>
             </div>
         </div>
         <div class="row-fluid" style="background: #f4f4f4;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 30px 0;margin-top: 50px;margin-bottom: 80px;">
