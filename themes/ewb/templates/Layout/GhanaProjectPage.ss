@@ -85,8 +85,8 @@
                     <% end_if %>
 		                
 		                        <li class="span3 $Pos">
-		                            <a href="$Image.URL" class="fancybox" rel="group">
-                                        <img src="$Image.SetWidth(222).URL" alt="">
+		                            <a href="$Image.SetWidth(700).URL" class="fancybox" rel="group">
+                                        <img src="$Image.SetSize(175,131).URL" alt="">
                                     </a>
 		                        </li>
 		                        
