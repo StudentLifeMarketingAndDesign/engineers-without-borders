@@ -12,7 +12,7 @@ a:focus {outline:thin dotted;}
 
 p {margin:0 0 1em;}
 p + p {margin:1em 0;}
-img + p {margin-top: 1em;}
+img:not(.left) + p {margin-top: 1em;}
 small {font-size: 85%;}
 .lead {font-size: 23px;line-height: 1.5;font-style: italic;}
 
@@ -78,6 +78,11 @@ hr {
 }
 .left {float: left;}
 .right {float: right;}
+@media only screen and (max-width: 480px) {
+    .left,.right {
+        float: none;
+    }
+}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
 .text-center {text-align: center;}

@@ -67,8 +67,7 @@ table {font-family: arial, verdana, sans-serif;}
 		width: 100%;
 	}
 	.banner-home {
-		background-image: url(../images/banner_rounded.png);
-		/*background-image: url(../images/banner_home.jpg);*/
+		background-image: url(../images/banner.jpg);
 	}
 	.main-content {
 		margin-top: 200px;
@@ -203,10 +202,6 @@ table {font-family: arial, verdana, sans-serif;}
 }
 
 /* Members ---------------------- */
-.staff-img {
-	box-shadow: inset 1px 1px 10px #000;
-}
-
 .member-img  {
 	background: #fff;
 	border-radius: 100px;
