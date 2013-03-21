@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{$ThemeDir}/css/master.css">
         <link rel="stylesheet" href="{$ThemeDir}/css/print.css" media="print" />
         
-        <script src="http://use.edgefonts.net/source-sans-pro:n3,n4,i4,n7,n9.js"></script>
+        <script src="http://use.edgefonts.net/source-sans-pro:n3,n4,i4,n7.js"></script>
         <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
     
