@@ -1,3 +1,4 @@
+<% if Posts %>
         <h2 class="events-title">Upcoming Events</h2>
         
         <% loop Posts() %>
@@ -30,3 +31,4 @@
             <% end_if %>
         
         <% end_loop %>
+<% end_if %>
