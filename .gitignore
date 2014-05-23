@@ -4,3 +4,5 @@ assets/
 gridfield-bulk-editing-tools/
 sortablegridfield/
 themes/simple/
+vendor/composer/
+vendor/autoload.php
