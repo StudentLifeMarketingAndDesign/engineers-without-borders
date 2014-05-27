@@ -3,14 +3,14 @@
  
 class GalleryImage extends DataObject {
  
-    public static $db = array(	
+    private static $db = array(	
 	  'SortOrder' => 'Int',
 	  'Title' => 'Varchar',
 	  'Description' => 'Varchar(400)'
   );
  
   // One-to-one relationship with gallery page
-  	public static $has_one = array(
+  	private static $has_one = array(
     'Image' => 'Image',
     'GalleryPage' => 'GalleryPage',
   );

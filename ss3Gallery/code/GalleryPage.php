@@ -3,16 +3,16 @@
 class GalleryPage extends Page {
 	
 
-	public static $db = array(
+	private static $db = array(
 	'GalFolder' => 'Varchar(100)'
 	);
 	
 	// Used to automatically include photos in a specific folder
-	static $has_one = array(
+	private $has_one = array(
 	);
 	
 	// One gallery page has many gallery images
-	public static $has_many = array(
+	private static $has_many = array(
     'GalleryImages' => 'GalleryImage'
   	);
 	
