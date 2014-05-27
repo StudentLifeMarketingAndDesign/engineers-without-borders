@@ -1,31 +1,56 @@
 <?php
+
  
 class GalleryImage extends DataObject {
  
-  
-  public static $db = array(	
+    public static $db = array(	
 	  'SortOrder' => 'Int',
-	  'Title' => 'Varchar'
+	  'Title' => 'Varchar',
+	  'Description' => 'Varchar(400)'
   );
  
   // One-to-one relationship with gallery page
-  public static $has_one = array(
+  	public static $has_one = array(
     'Image' => 'Image',
-    'GalleryPage' => 'GalleryPage'	
+    'GalleryPage' => 'GalleryPage',
   );
+  
+	//Permissions
+	function canEdit($Member = null){if(permission::check('EDIT_GALLERY')){return true;}else{return false;}}
+	function canCreate($Member = null){if(permission::check('EDIT_GALLERY')){return true;}else{return false;}} 
  
- // tidy up the CMS by not showing these fields
-  public function getCMSFields() {
- 		$fields = parent::getCMSFields();
+ // Add fields to dataobject
+  public function getCMSFields() { 
+  		$fields = parent::getCMSFields();
 		$fields->removeFieldFromTab("Root.Main","GalleryPageID");
 		$fields->removeFieldFromTab("Root.Main","SortOrder");
-		return $fields;		
-  }
-  
+		
+		$fields = new FieldList(
+		new TextField('Title','Image Title'),
+		new TextAreaField('Description','Photo Description (Max 280 Charachters)'),
+		new UploadField('Image','Photo')
+  		);
+		return $fields;
+}
+
+ 
+  // Add validation
+   public function validate() {
+        $result = parent::validate();
+		$charcount = strlen($this->Description);
+		$description = 'You should have less than 280 charchters in the description. You have';
+		if($charcount > 280) {
+            $result->error($description.' '.$charcount);
+        }
+        return $result;
+    }
+
+   
+ 
   // Tell the datagrid what fields to show in the table
    public static $summary_fields = array( 
-       'ID' => 'ID',
 	   'Title' => 'Title',
+/*	   'Description'=>'Description',*/
 	   'Thumbnail' => 'Thumbnail'     
    );
   
@@ -33,5 +58,6 @@ class GalleryImage extends DataObject {
    public function getThumbnail() { 
      return $this->Image()->CMSThumbnail();
   }
- 
+  
 }
+

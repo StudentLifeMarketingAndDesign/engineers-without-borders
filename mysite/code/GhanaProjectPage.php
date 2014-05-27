@@ -40,7 +40,7 @@ class GhanaProjectPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {
