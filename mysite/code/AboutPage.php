@@ -1,14 +1,14 @@
 <?php
 class AboutPage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"PastMembers" => "HTMLText",
 		"MainFeatureTitle" => "Text",
 		"MainFeatureContent" => "HTMLText"
 		
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		"MainFeatureImage" => "Image"
 	);
 
@@ -58,7 +58,7 @@ class AboutPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

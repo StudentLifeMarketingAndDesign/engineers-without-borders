@@ -1,7 +1,7 @@
 <?php
 class Post extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	
 		"WrittenDate" => "Date",
 		"EventDate" => "Date",
@@ -9,11 +9,11 @@ class Post extends Page {
 		"AuthorEmail" => "Text"
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		
 	);
 	
-	public static $can_be_root = false;
+	private static $can_be_root = false;
 	
 	
 	public function getCMSFields() {
@@ -56,7 +56,7 @@ class Post_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

@@ -1,12 +1,12 @@
 <?php
 class GhanaProjectPage extends GalleryPage {
 
-	public static $db = array(
+	private static $db = array(
 		"Content2" => "HTMLText",
 		"Content3" => "HTMLText"
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 	
 	public function getCMSFields() {
@@ -40,7 +40,7 @@ class GhanaProjectPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

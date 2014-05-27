@@ -1,7 +1,7 @@
 <?php
 class Profile extends DataObject {
 
-	public static $db = array(
+	private static $db = array(
 		"FirstName" => "Text",
 		"LastName" => "Text",
 		"Position" => "Text",
@@ -9,18 +9,18 @@ class Profile extends DataObject {
 		
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		"Committee" => "Committee",
 		"Photo" => "Image"
 		
 	);
 	
-	public static $summary_fields = array(
+	private static $summary_fields = array(
 		"FirstName" => "FirstName",
 		"LastName" => "LastName"
 	);
 
-	public static $plural_name = 'Profiles'; 
+	private static $plural_name = 'Profiles'; 
 	
 	public function BootstrapGrid($num) {
 		return round(12/$num);

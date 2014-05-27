@@ -1,17 +1,17 @@
 <?php
 class Committee extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"Title" => "Text",
 		"Description" => "HTMLText",
 		
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		"Photo" => "Image"
 	);
 	
-	public static $has_many = array(
+	private static $has_many = array(
 		"Profiles" => "Profile"
 	);
 	

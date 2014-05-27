@@ -19,9 +19,9 @@
 					<li class="active"><a href="ghana/">Ghana Project</a></li>
 					<li><a href="committees/">Committees</a></li>
 					<li><a href="get-involved/">Get Involved</a></li>-->
-				<% control Menu(1) %>
+				<% loop Menu(1) %>
 					<li <% if $LinkOrSection = "section" %>class="active"<% end_if %>><a href="$Link" >$MenuTitle</a></li>
-				<% end_control %>
+				<% end_loop %>
 			</ul>
 		</nav>
     </div>
