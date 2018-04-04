@@ -7,4 +7,6 @@ themes/simple/
 
 vendor/autoload.php
 vendor/composer/
-
+reports/
+siteconfig/
+/vendor
