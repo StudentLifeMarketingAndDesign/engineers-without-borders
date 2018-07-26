@@ -17,6 +17,6 @@ i18n::set_locale('en_US');
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 GD::set_default_quality(85);
 
-if(Director::isLive()) {
-	Director::forceSSL(array('/^Security/','/^admin/'));
+if (Director::isLive()) {
+	Director::forceSSL();
 }
